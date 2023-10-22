@@ -17,12 +17,12 @@ function LoginForm({ onLogin, error }: any) {
 <div className=' text-center bg-slate-300 pb-2 rounded-b'>
       <div className=' text-lg font-bold'>Credentials</div>
      <div className='flex justify-around'>
-     <div className=''>
+     <div >
 <div className=' font-semibold text-red-500'>For admin </div>
 <div ><span className='font-medium'>username</span>: user1</div>
 <div><span  className='font-medium'>password:</span> password1</div>
       </div>
-      <div className=''>
+      <div >
 <div  className=' font-semibold text-red-500'>For user</div> 
 <div ><span className='font-medium'>username</span>: user2</div>
 <div><span className='font-medium'>password:</span> password2</div>
