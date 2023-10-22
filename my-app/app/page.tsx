@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import LoginForm from './components/LoginForm';
 import Dashboard from './components/Dashboard';
+import { UserData } from './utils/user.interface';
 
 
 
@@ -31,9 +32,7 @@ export default function Home() {
 
 
   const handleLogin = (username: any, password: any) => {
-    const user = users.find(
-      // (u) => u.username === username && bcrypt.compareSync(password, u.password)
-      (u) => u.username === username && u.password === password
+    const user = users.find((u) => u.username === username && u.password === password
     );
     if (user) {
       setLoggedIn(true);
@@ -76,10 +75,3 @@ export default function Home() {
 }
 
 
-
-interface UserData {
-  username: string;
-  password: string;
-  active_module: string,
-  role: string
-}

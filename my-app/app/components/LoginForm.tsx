@@ -1,39 +1,4 @@
 import React, { useState } from 'react';
-// import { validateUser, login } from '../utils/authentication';
-// import { useRouter } from 'next/router';
-
-
-
-// const router = useRouter();
-
-
-// const LoginForm = () => {
-  // const [username, setUsername] = useState('');
-  // const [password, setPassword] = useState('');
-  // const [error, setError] = useState('');
-
-//   const handleLogin = async () => {
-//     const user = validateUser(username, password);
-//     if (user) {
-//       login(user);
-//       // Redirect to the dashboard
-//       router.push('/dashboard')
-//     } else {
-//       setError('Invalid username or password');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <input type="text" placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
-//       <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-//       <button onClick={handleLogin}>Login</button>
-//       {error && <p>{error}</p>}
-//     </div>
-//   );
-// };
-
-// export default LoginForm;
 
 
 
@@ -49,7 +14,7 @@ function LoginForm({ onLogin, error }: any) {
   return (
     <div>
 
-<div className=' text-center'>
+<div className=' text-center bg-slate-300 pb-2 rounded-b'>
       <div className=' text-lg font-bold'>Credentials</div>
      <div className='flex justify-around'>
      <div className=''>

@@ -4,16 +4,16 @@
 //   };
 
 export const userRoles = {
-    ADMIN: 'admin',
-    USER: 'user',
+    admin: 'admin',
+    user: 'user',
   };
   
   export const permissions = {
-    ADMIN: {
+    admin: {
       module1: true,
       module2: true,
     },
-    USER: {
+    user: {
       module1: true,
       module2: false,
     },
