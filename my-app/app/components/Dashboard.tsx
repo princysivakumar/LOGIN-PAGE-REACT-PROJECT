@@ -8,11 +8,7 @@ const Dashboard = ( { user }: { user: User }) => {
   return (
     <div >
       {user.role === userRoles.admin ? (
-      
 <AdminDashboard user={user} />
-
-     
-        
       ) : (
         <UserDashboard  user={user} />
       )}
